@@ -16,6 +16,7 @@ import LandingPage from './pages/LandingPage';
 import FeaturesPage from './pages/FeaturesPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from "./pages/ContactPage";
+import FAQPage from './pages/FAQPage'; // <-- Added FAQ Import cleanly here
 import VerificationPending from './pages/VerificationPending';
 import AdminPanel from './pages/AdminPanel';
 
@@ -81,6 +82,7 @@ function App() {
               <Route path="/features" element={<FeaturesPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/faq" element={<FAQPage />} /> {/* <-- Added FAQ Route here */}
 
               {/* Auth Routes */}
               <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
