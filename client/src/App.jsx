@@ -19,15 +19,14 @@ import ContactPage from "./pages/ContactPage";
 import FAQPage from './pages/FAQPage'; // <-- Added FAQ Import cleanly here
 import VerificationPending from './pages/VerificationPending';
 import AdminPanel from './pages/AdminPanel';
-<<<<<<< HEAD
-=======
+ HEAD
 import ForgotPassword from './pages/ForgotPassword';
 import VerifyOTP from './pages/VerifyOTP';
 import ResetPassword from './pages/ResetPassword';
 import VerifyRegistrationOTP from './pages/VerifyRegistrationOTP';
 import ScrollToTop from './components/ScrollToTop';
 import { ThemeProvider } from './context/ThemeContext';
->>>>>>> upstream/main
+ upstream/main
 
 const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem('token');
