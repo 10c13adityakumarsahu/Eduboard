@@ -34,7 +34,7 @@ const Dashboard = () => {
         }
     }, [user?.id, location.pathname]);
 
-    const fetchSavedBoards = async () => {
+    async function fetchSavedBoards() {
         try {
             let res;
             if (isTeacher) {
@@ -50,7 +50,7 @@ const Dashboard = () => {
         } finally {
             setLoading(false);
         }
-    };
+    }
 
     const generateRoomId = () => {
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
